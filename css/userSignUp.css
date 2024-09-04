@@ -1,0 +1,113 @@
+@import url('../font/Poppins/Poppins.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+body{
+    background: #eeeeee;
+}
+.form-container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background:#f3f3f3;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.signin-content{
+    width: 320px;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../imagens/2148216113.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signin-content span{
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+}
+.signin-content p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.signin-content a{
+    text-decoration: none;
+    color: white;
+    background: #C91827;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+h1{
+    text-align: center;
+    font-weight: 500;
+    color: #3E3E3C;
+}
+
+.email-content, .senha-content, .username-content{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label{
+    color: #3E3E3C;
+}
+
+.button-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.button-content input{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background: #C91827;
+    font-weight: 400;
+}
+.email-content input, .senha-content input, .username-content input{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background: #D9D9D9;
+}
+
+form a{
+    color: #fff;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+
+form a:hover{
+    color: #C91827;
+}

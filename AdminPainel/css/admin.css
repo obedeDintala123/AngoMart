@@ -1,0 +1,137 @@
+@import url('../font/Poppins/Poppins.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#EEEEEE;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background: #292F3E;
+}
+
+.logo-busca-content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 45%;
+}
+
+h1{
+    color: #fff;
+    font-weight: 500;
+}
+
+.buscarProduto{
+    display: flex;
+    width: 100%;
+}
+
+.buscarProduto input{
+    border: none;
+    width: 100%;
+    background: #fff;
+    padding: 0 20px;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.search{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+.adicionar-produto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adicionar-produto .add{
+    width: 18px;
+    height: 18px;
+}
+
+.adicionar-produto a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+table{
+    width: 80%;
+    text-align: center;
+    border-spacing: 0;
+    margin: 100px auto;
+}
+
+table thead{
+    display: block;
+    background: #292F3E;
+}
+
+table thead tr, table tbody tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table th, td{
+    padding: 10px 20px;
+}
+
+table th{
+    color: #fff;
+    font-weight: 400;
+}
+
+table tbody{
+    display: block;
+    background: #fff;
+    max-height: 400px; 
+    overflow-y: auto; 
+}
+
+.button-td{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-td .editar-button, .excluir-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.editar-button{
+    background: #292F3E;
+    color: #fff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,755 @@
+@import url("../font/Poppins/Poppins.css");
+
+:root{
+    --primary-color: #C91827;
+    --bg-color: #EEEEEE;
+    --font-color: #3E3E3C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+.link{
+    text-decoration: none;
+    color: #3E3E3C;
+}
+
+.ajuda-entrega-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ajuda-content, .entrega-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon{
+    width: 18px;
+    height: 18px;
+}
+
+.header-content-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px;
+    margin-bottom: 10px;
+}
+
+.logo-busca-content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo{
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.busca-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.busca-content input{
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: var(--bg-color);
+}
+
+.search{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: var(--bg-color);
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+.button-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-button{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.signup-button{
+    text-decoration: none;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+.signup-button:hover{
+    transition: .6s ease-in-out;
+    background: #95131e;
+}
+
+.header-content-3{
+    display: flex;
+    padding: 0 60px 10px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.link-nav{
+    position: relative;
+}
+
+.link-nav:hover{
+    color: #000;
+}
+
+.link-nav::after{
+    content:"";
+    height: 2.5px;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    transition: .4s ease-in-out;
+}
+
+.link-nav:hover::after{
+    width: 100%;
+}
+
+.carrinho-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main{
+    margin-top: 180px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.section-2{
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titule-section{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+/*Slider */
+.splide {
+    width: 100%;
+    height: 300px;
+    background-size: cover; /* Ajusta a imagem para cobrir o container */
+    background-position: center; /* Centraliza a imagem */
+    padding: 15px 60px; /* Espaçamento interno opcional */
+}
+
+.splide__slide {
+    width: 100%;
+    height: 300px;
+    color: white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide1{
+    background: url('../imagens/Regresso-Aulas-1919x360-Hero.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.slide2{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)) ,url('../imagens/Retangulo\ 5.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.slide3{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)) ,url('../imagens/Rectangle\ 46.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.link-slide{
+border: none;
+border-radius: 10px;
+width: 180px;
+padding: 10px 20px;
+color: #fff;
+text-decoration: none;
+background: var(--primary-color);
+}
+
+.ver-todos{
+    margin: 180px auto;
+}
+
+.comprar{
+    margin: auto;
+    margin-top: -30px;
+}
+
+.comprar:hover{
+    transition: .6s ease-in-out;
+    background: #95131e;
+}
+
+.splide__arrow--prev {
+    background-color: var(--primary-color); /* Remover a cor de fundo do botão, se desejar */
+    border: none; /* Remover bordas, se houver */
+    fill: #fff; /* Alterar a cor da seta usando a propriedade 'fill' para SVG */
+}
+
+/* Estilizar a seta seguinte */
+.splide__arrow--next {
+    background-color: var(--primary-color); /* Remover a cor de fundo do botão, se desejar */
+    border: none; /* Remover bordas, se houver */
+    fill: #fff; /* Alterar a cor da seta usando a propriedade 'fill' para SVG */
+}
+
+.splide__pagination__page {
+    background-color: #D9D9D9; /* Cor dos pontinhos */
+}
+
+.splide__pagination__page.is-active {
+    background-color: var(--primary-color); /* Cor do pontinho ativo */
+}
+
+/*Slider */
+.slider2{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.points-content{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+.point{
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50px;
+    background: #D9D9D9;
+    margin-top: 10px;
+}
+
+.point1{
+    background: var(--primary-color);
+}
+
+.seta-esquerda, .seta-direita{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.slide__track{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.slide__slide {
+    padding: 10px;
+    width: 20%;
+    height: 430px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.img-slide{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.text-slide{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.titule-slide{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info-slide{
+    font-size: 12px;
+}
+
+.preco-slide{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.button-img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.button-slide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.button-slide a{
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  font-weight: 400;
+}
+
+.button-slide a:hover{
+    transition: .4s ease-in-out;
+    background: #95131e;
+}
+
+.section-3{
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.imagem-frutas, .imagem-bebidas, .imagem-doces-salgados, .imagem-higiene, .imagem-limpeza, .imagem-eletrodomestico, .imagem-eletronicos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   align-items: center;
+}
+
+.imagem-frutas img , .imagem-bebidas img, .imagem-doces-salgados img, .imagem-higiene img, .imagem-limpeza img, .imagem-eletrodomestico img, .imagem-eletronicos img{
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imagens img:hover{
+    transition: .6s ease-out;
+    transform: scale(1.05);
+}
+
+.section-4{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titule-section-4{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.receita-cards{
+    display:flex;
+    justify-content: space-between;
+}
+
+.receita-cards .card{
+    width: 32.5%;
+    height: 350px;
+    transition: .6s ease-in-out;
+}
+
+.receita-cards .card:hover{
+    transform: scale(1.02);
+}
+
+.card1{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url('../imagens/espaguete-com-molho-a-bolonhesa-ou-ragu-bolognese-1-840x480.jpeg');
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card1 span{
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    background: var(--primary-color);
+}
+
+.card2{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('../imagens/WhatsApp-Image-2021-11-19-at-17.09.29-768x634.jpeg');
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card2 span{
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    background: var(--primary-color);
+}
+
+.card3{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('../imagens/acompanhamentos-arroz-a-grega-garoupao.jpg');
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card3 span{
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    background: var(--primary-color);
+}
+
+.section-5{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titule-section-5{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.promo-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo-card-content-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-card-content-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-card-content-1 .card{
+    width: 32.5%;
+    height: 350px;
+    transition: .6s ease-in-out;
+}
+
+.promo-card-content-1 .card:hover{
+    transform: scale(1.02);
+}
+
+.promo-card-content-2 .card{
+    width: 32.5%;
+    height: 350px;
+    transition: .6s ease-in-out;
+}
+
+.promo-card-content-2 .card:hover{
+    transform: scale(1.02);
+}
+
+
+.promo1{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.29.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.promo2{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.40.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.promo3{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.48.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.promo4{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.29.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.promo5{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.40.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+.promo6{
+    background: url('../imagens/WhatsApp\ Image\ 2024-08-20\ at\ 21.44.48.jpeg');
+    background-size: cover;
+    background-position:center;
+}
+
+
+.section-6{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section-6{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.text-section-6 .titule-section-6{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-section-6 p{
+    text-align: center;
+}
+
+.encontrar-lojas-form{
+    width: 70%;
+    height: 250px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve para a parte superior */
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url('../imagens/2148510530.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #e9e9e9;
+}
+
+.encontrar-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-content{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.input-content input{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: var(--bg-color);
+}
+
+.localizacao-content{
+    background: var(--primary-color);
+    padding: 9.5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    width: 25.5%;
+}
+
+.section-7{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+
+.newsletter-form{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+.newsletter-form input{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.newsletter-form input[type="submit"]{
+    width: 20%;
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+footer{
+    background: #D9D9D9;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-content-1{
+    display: flex;
+    gap: 120px;
+    padding: 10px 60px;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pagamento, .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagamento .icon-pagamento, .icon-redes{
+    display: flex;
+    gap: 10px;
+}
+
+.column2, .column3, .column4{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: #3E3E3C;
+    transition: .4s ease-in-out;
+}
+
+.link-footer:hover{
+    color: var(--primary-color);
+}
+
+.footer-content-2{
+    background: var(--bg-color);
+    width: 100%;
+    padding: 10px 60px;
+}

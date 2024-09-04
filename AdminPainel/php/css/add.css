@@ -1,0 +1,51 @@
+@import url('../font/Poppins/Poppins.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #292F3E;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div input, select, button{
+    outline: none;
+    padding: 6px 20px;
+    border: none;
+}
+
+button{
+    background: #C91827;
+    color: #fff;
+    cursor: pointer;
+}
